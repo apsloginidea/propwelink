@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Details Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .radio-group {
+      margin-bottom: 20px;
+    }
+
+    .radio-group p {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .radio-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .radio-options label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background: #0078d7;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background: #005fa3;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      input[type="submit"] {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>User Details</h2>
+    <form action="/submit" method="post">
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Mobile -->
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+      <!-- Location -->
+      <div class="radio-group">
+        <p>Select Location:</p>
+        <div class="radio-options">
+          <label><input type="radio" name="location" value="Bangalore" required> Bangalore</label>
+          <label><input type="radio" name="location" value="Hyderabad"> Hyderabad</label>
+          <label><input type="radio" name="location" value="Chennai"> Chennai</label>
+          <label><input type="radio" name="location" value="Pune"> Pune</label>
+        </div>
+      </div>
+
+      <!-- Configuration -->
+      <div class="radio-group">
+        <p>Select Configuration:</p>
+        <div class="radio-options">
+          <label><input type="radio" name="configuration" value="1BHK" required> 1BHK</label>
+          <label><input type="radio" name="configuration" value="2BHK"> 2BHK</label>
+          <label><input type="radio" name="configuration" value="3BHK"> 3BHK</label>
+          <label><input type="radio" name="configuration" value="4BHK+"> 4BHK+</label>
+          <label><input type="radio" name="configuration" value="Villa"> Villa</label>
+          <label><input type="radio" name="configuration" value="Plot"> Plot</label>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
