@@ -4,7 +4,8 @@ const labelConfig = {
   "welcome_message": "Welcome to Propwelink!",
   "contact_us": "Reach us at support@propwelink.com",
   "company": "PropWeLink",
-  "footer_note": "© 2026 Propwelink Pvt Ltd"
+  "footer_note": "© 2026 Propwelink Pvt Ltd",
+  "submit_contact_details":"ttps://formspree.io/f/xrevjbjn"
 };
 
 // Label Engine
