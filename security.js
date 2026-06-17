@@ -1,0 +1,16 @@
+// Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+document.addEventListener("keydown", function (event) {
+    if (event.key === "F12" || 
+        (event.ctrlKey && event.shiftKey && event.key === "I") || 
+        (event.ctrlKey && event.shiftKey && event.key === "J") || 
+        (event.ctrlKey && event.key === "U")) {
+        event.preventDefault();
+        alert("Developer tools are disabled!");
+    }
+});
+
+// Optional: Disable right-click
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+    alert("Right-click is disabled!");
+});
