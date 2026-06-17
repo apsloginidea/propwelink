@@ -6,7 +6,10 @@ const labelConfig = {
   "company": "Propwelink",
   "footer_note": "© 2026 Propwelink Pvt Ltd",
   "submit_contact_details":"ttps://formspree.io/f/xrevjbjn",
-  "website_notice": "We are Real Estate Advisory Company.<br> Currently our website is under deveplopment phase, meanwhile if you are looking for investment in real estate market, then leave us your contact deails, our team will call you back soon"
+  "website_msg1": "We are Real Estate Advisory Company.",
+  "website_msg2": "Our website is under deveplopment phase,",
+  "website_msg3": "meanwhile if you are looking for investment in real estate market,",
+  "website_msg4": "then leave us your contact deails, our team will call you back soon"
 };
 
 // Label Engine
