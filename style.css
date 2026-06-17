@@ -95,7 +95,7 @@ body {
   min-height: 100vh;
 
   /* Center alignment */
-  display: flex;
+  display: relative;
   justify-content: center;   /* horizontal center */
   align-items: center;       /* vertical center */
   text-align: center;        /* center text inside elements */
