@@ -85,7 +85,10 @@ button:hover {
   height: 884px;
   margin-top: 15%;
 }
-h1 { margin-top: 40%}
+h1 { 
+  margin-top: 40%;
+  font-size: 40px;
+   }
 .navbar { 
   background-color: dimgray;
   overflow: hidden; }
