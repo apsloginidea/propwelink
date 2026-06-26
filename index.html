@@ -1,35 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <script src="label-engine.js" defer></script>
-   <link rel="stylesheet" href="style.css?v=2">
-  <title>Propwelink | Coming Soon</title>
-  
-</head>
-<body>
-  
-<div class="navbar">
-  <a ref="#">Home</a>
-   <a ref="#">About Us</a>
-   <a ref="#">Services</a>
-   <a ref="#">Contact Us</a>
-</div>
-  <h1 data-label="company">Propwelink</h1>
-  <!-- 
-  <p data-label="website_msg1">We’re Coming Soon ...</p>
-  <h2 data-label="website_msg2">We’re Coming Soon ...</h2>
-  <h2 data-label="website_msg3">We’re Coming Soon ...</h2>
-  <h2 data-label="website_msg4">We’re Coming Soon ...</h2>
-   <a href="contact_details.html" class="button">Contact Us</a>
-  -->
-  
-  <p>We are Real Estate Advisory Company.<br>
-    Our website is under deveplopment phase.<br>
-    Meanwhile if you are looking for investment in real estate market,<br>
-    then leave us your contact deails. Our team will call you back soon</p>
+<svg xmlns="http://w3.org" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f5f9" stroke-width="1" />
+    </pattern>
 
-  
-</body>
-</html>
+    <!-- Compressed Capsule Shadow -->
+    <filter id="menu-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.1" />
+    </filter>
+
+    <!-- Active Icon Glow Effect -->
+    <filter id="active-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#2563eb" flood-opacity="0.4" />
+    </filter>
+
+    <!-- Under Development Banner Glow -->
+    <filter id="banner-shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#d97706" flood-opacity="0.15" />
+    </filter>
+
+    <!-- Original Chain Link Gradients -->
+    <linearGradient id="teal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2" />
+      <stop offset="100%" stop-color="#0e7490" />
+    </linearGradient>
+    
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    
+    <linearGradient id="violet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+
+    <!-- CSS Styles for pure SVG interactive tooltips -->
+    <style>
+      .nav-item { cursor: pointer; }
+      .tooltip { opacity: 0; pointer-events: none; transition: opacity 0.2s ease-in-out; }
+      .nav-item:hover .tooltip { opacity: 1; }
+      .nav-item:hover path, .nav-item:hover rect, .nav-item:hover circle { stroke: #2563eb; }
+    </style>
+  </defs>
+
+  <!-- Full Page Canvas -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- BRANDING GROUP (Top Left Corner - Original Size) -->
+  <g transform="translate(60, 30)">
+    <!-- Original 3-Link Interlocking Chain Logo Component -->
+    <g transform="translate(0, 5)">
+      <!-- Link 1: Teal -->
+      <path d="M 25 10 L 45 10 A 15 15 0 0 1 60 25 L 60 45 A 15 15 0 0 1 45 60 L 25 60 A 15 15 0 0 1 10 45 L 10 25 A 15 15 0 0 1 25 10 Z" 
+            fill="none" stroke="url(#teal-grad)" stroke-width="12" stroke-linecap="round"/>
+      
+      <!-- Link 2: Blue -->
+      <path d="M 75 10 L 95 10 A 15 15 0 0 1 110 25 L 110 45 A 15 15 0 0 1 95 60 L 75 60 A 15 15 0 0 1 60 45 L 60 25 A 15 15 0 0 1 75 10 Z" 
+            fill="none" stroke="url(#violet-grad)" stroke-width="12" stroke-linecap="round"/>
+      
+      <!-- True Interlocking Overlap Layers -->
+      <path d="M 60 25 L 60 45" fill="none" stroke="url(#teal-grad)" stroke-width="12" stroke-linecap="round" />
+      <path d="M 60 45 A 15 15 0 0 1 45 60" fill="none" stroke="url(#teal-grad)" stroke-width="12" />
+    </g>
+
+    <!-- Typography for PROPWELINK -->
+    <text x="140" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#0f172a" letter-spacing="0.5">
+      PROP<tspan fill="#2563eb" font-weight="400">welink</tspan>
+    </text>
+    <text x="142" y="76" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#64748b" letter-spacing="5">
+      Real Estate Advisory
+    </text>
+  </g>
+
+  <!-- INFORMATIVE "UNDER DEVELOPMENT" MAIN CONTENT AREA -->
+  <g transform="translate(120, 320)" font-family="system-ui, -apple-system, sans-serif">
+    
+
+    <!-- Primary Headlines -->
+
+    <!-- Geometric Decorative Blueprint Graphics (Simulating construction/wireframe status) -->
+    <g transform="translate(900, -80)" stroke="#cbd5e1" stroke-width="1.5" fill="none">
+      <!-- Outer abstract construction boundaries -->
+      <rect x="0" y="0" width="400" height="300" rx="12" stroke-dasharray="8 8" />
+      <line x1="0" y1="0" x2="400" y2="300" stroke="#f1f5f9" />
+      <line x1="400" y1="0" x2="0" y2="300" stroke="#f1f5f9" />
+      
+      <!-- Safe Area Crosshair Box -->
+      <circle cx="200" cy="150" r="80" stroke="#e2e8f0" />
+      <circle cx="200" cy="150" r="40" stroke="#2563eb" stroke-dasharray="4 4" />
+      <line x1="200" y1="40" x2="200" y2="260" stroke="#cbd5e1" />
+      <line x1="50" y1="150" x2="350" y2="150" stroke="#cbd5e1" />
+    </g>
+  </g>
+
+  <!-- ULTRA-COMPRESSED OVAL CAPSULE MENU (With Hover Interactive Tooltips) -->
+  <g transform="translate(730, 920)" filter="url(#menu-shadow)">
+    <!-- Gray Capsule Shell Frame -->
+    <rect width="460" height="76" rx="38" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Navigation Icon Array -->
+    <g transform="translate(0, 38)">
+      
+      <!-- Icon 1: Home (Active Context State) -->
+      <g class="nav-item" transform="translate(55, 0)">
+        <g filter="url(#active-glow)">
+          <path d="M-12,6 L-12,-5 L0,-15 L12,-5 L12,6 Z" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M-4,6 L-4,0 L4,0 L4,6" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+        </g>
+        <circle cx="0" cy="24" r="3" fill="#2563eb" />
+        
+        <!-- Tooltip -->
+        <g class="tooltip" transform="translate(0, -52)">
+          <rect x="-35" y="-14" width="70" height="28" rx="6" fill="#0f172a" />
+          <polygon points="0,19 -6,14 6,14" fill="#0f172a" />
+          <text y="4" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">HOME</text>
+        </g>
+      </g>
+
+      <!-- Icon 2: Buy -->
+      <g class="nav-item" transform="translate(142, 0)">
+        <path d="M-8,-11 L2,-11 L11,-2 L2,7 L-8,7 Z" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="-2" cy="-6" r="1.5" fill="#334155"/>
+        
+        <!-- Tooltip -->
+        <g class="tooltip" transform="translate(0, -52)">
+          <rect x="-30" y="-14" width="60" height="28" rx="6" fill="#0f172a" />
+          <polygon points="0,19 -6,14 6,14" fill="#0f172a" />
+          <text y="4" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">BUY</text>
+        </g>
+      </g>
+
+      <!-- Icon 3: Sell -->
+      <g class="nav-item" transform="translate(230, 0)">
+        <path d="M-11,-4 L-5,-10 L5,2 L-1,8 Z" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M-5,0 L-11,6 L-4,13 L3,7" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="0" cy="-2" r="1" fill="#334155"/>
+        
+        <!-- Tooltip -->
+        <g class="tooltip" transform="translate(0, -52)">
+          <rect x="-30" y="-14" width="60" height="28" rx="6" fill="#0f172a" />
+          <polygon points="0,19 -6,14 6,14" fill="#0f172a" />
+          <text y="4" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">SELL</text>
+        </g>
+      </g>
+
+      <!-- Icon 4: Rent -->
+      <g class="nav-item" transform="translate(318, 0)">
+        <circle cx="-6" cy="-4" r="6" fill="none" stroke="#334155" stroke-width="2.5"/>
+        <path d="M0,0 L11,11 L8,14 M5,5 L9,1" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round"/>
+        
+        <!-- Tooltip -->
+        <g class="tooltip" transform="translate(0, -52)">
+          <rect x="-32" y="-14" width="64" height="28" rx="6" fill="#0f172a" />
+          <polygon points="0,19 -6,14 6,14" fill="#0f172a" />
+          <text y="4" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">RENT</text>
+        </g>
+      </g>
+
+      <!-- Icon 5: Contact Us -->
+      <g class="nav-item" transform="translate(405, 0)">
+        <rect x="-13" y="-9" width="26" height="18" rx="3" fill="none" stroke="#334155" stroke-width="2.5"/>
+        <path d="M-13,-9 L0,0 L13,-9" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round"/>
+        
+        <!-- Tooltip -->
+        <g class="tooltip" transform="translate(0, -52)">
+          <rect x="-50" y="-14" width="100" height="28" rx="6" fill="#0f172a" />
+          <polygon points="0,19 -6,14 6,14" fill="#0f172a" />
+          <text y="4" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">CONTACT US</text>
+        </g>
+      </g>
+
+    </g>
+  </g>
+</svg>
